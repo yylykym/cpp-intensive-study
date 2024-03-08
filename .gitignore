@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+.vs
+
+/**/DynamicMemory/x64/Debug
+
+/**/*.vxcproj
+/**/DynamicMemory/DynamicMemory.vcxproj
+*.filters
+/**/DynamicMemory/DynamicMemory.vcxproj.user
+/DynamicMemory/DynamicMemory.sln
