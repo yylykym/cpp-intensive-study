@@ -33,10 +33,10 @@
 
 .vs
 
-/**/DynamicMemory/x64/Debug
+/**/DynamicMemory/x64
 
 /**/*.vxcproj
 /**/DynamicMemory/DynamicMemory.vcxproj
 *.filters
 /**/DynamicMemory/DynamicMemory.vcxproj.user
-/DynamicMemory/DynamicMemory.sln
+/**/DynamicMemory.sln
