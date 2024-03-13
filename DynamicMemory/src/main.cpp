@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include "StrBolb.h"
 
 using namespace std;
@@ -28,15 +29,29 @@ int main()
 
 	cout << "------------------\n";
 
-	StrBolb s({"111"});
+	StrBlob sb1({"111"});
 
-	const string s1 = s.back();
+	const string s1 = sb1.back();
 
 	int* c = new int(); // 创建一个p指针指向一个动态分配的未初始化的无名对象
 
 	int i = int();
 
 	cout << i << endl;
+
+	cout << "------------------\n";
+
+	ifstream ifs("E:/code/cpp_primer_answer/Cpp_Primer_Answers/data/books.txt");
+	StrBlob sb;
+	string s;
+	while (getline(ifs, s))
+	{
+		sb.push_back(s);
+	}
+	for (StrBlobPtr sbp = sb.begin(); sbp != sb.end(); sbp.incr())
+	{
+		cout << sbp.deref() << endl;
+	}
 
 	return 0;
 }
